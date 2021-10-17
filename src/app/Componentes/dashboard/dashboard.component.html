@@ -1,6 +1,8 @@
 <div class="container">
-<h1>Comunicacion entre Componentes</h1>
-<h2>{{Textop}}</h2>
-<br>
-<app-card (TituloCard)="Habilitar($event)"></app-card>
+    <h1>Listado de Usuarios</h1>
+    <div class="row">
+        <div *ngFor="let usuario of listausuarios" class="col-md-4">
+            <app-card [User]="usuario"></app-card>
+        </div>
+    </div>
 </div>

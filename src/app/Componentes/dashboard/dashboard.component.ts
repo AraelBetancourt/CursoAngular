@@ -7,28 +7,40 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-  nombre: string;
-URLImg:string;
-Textop: string;
-isdisable: boolean;
+  listausuarios: any[];
+ 
   constructor() {
-      this.nombre="";
-    this.URLImg="";
-    this.Textop="Hola esto es un ejemplo"
-    this.isdisable=true;
+     this.listausuarios=[
+       {Nombre:"JOse",Email:"1",Genero:"M"},
+       {Nombre:"arael",Email:"2",Genero:"F"},
+       {Nombre:"Betancort",Email:"3",Genero:"F"},
+       {Nombre:"flores",Email:"4",Genero:"M"},
+       {Nombre:"JOse",Email:"1",Genero:"M"},
+       {Nombre:"arael",Email:"2",Genero:"F"},
+       {Nombre:"Betancort",Email:"3",Genero:"F"},
+       {Nombre:"flores",Email:"4",Genero:"M"},
+       {Nombre:"JOse",Email:"1",Genero:"M"},
+       {Nombre:"arael",Email:"2",Genero:"F"},
+       {Nombre:"Betancort",Email:"3",Genero:"F"},
+       {Nombre:"flores",Email:"4",Genero:"M"},
+       {Nombre:"JOse",Email:"1",Genero:"M"},
+       {Nombre:"arael",Email:"2",Genero:"F"},
+       {Nombre:"Betancort",Email:"3",Genero:"F"},
+       {Nombre:"flores",Email:"4",Genero:"M"},
+       {Nombre:"JOse",Email:"1",Genero:"M"},
+       {Nombre:"arael",Email:"2",Genero:"F"},
+       {Nombre:"Betancort",Email:"3",Genero:"F"},
+       {Nombre:"flores",Email:"4",Genero:"M"},
+       {Nombre:"JOse",Email:"1",Genero:"M"},
+       {Nombre:"arael",Email:"2",Genero:"F"},
+       {Nombre:"Betancort",Email:"3",Genero:"F"},
+       {Nombre:"flores",Email:"4",Genero:"M"},
+
+     ]
   }
 
   ngOnInit(): void {
   }
 
-  getNombre(): string {
-    return this.nombre="Jose Arael Betancourt Flores";
-  }
 
-  suma(uno: number,dos: number): number{
-    return uno+dos;
-  }
-  Habilitar(data:string):void {
-   this.Textop=data;
-  }
 }

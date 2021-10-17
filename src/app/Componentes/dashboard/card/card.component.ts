@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 
 @Component({
@@ -8,15 +8,20 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 })
 export class CardComponent implements OnInit {
 
-  @Output() TituloCard = new EventEmitter<string>()
+  @Input() User: any;
+  Nombre: string;
+  Email:string;
+  Genero:string;
   constructor() {
-
-
+    this.Nombre="";
+    this.Email="";
+    this.Genero="";
   }
 
   ngOnInit(): void {
+    this.Nombre=this.User.Nombre;
+    this.Email=this.User.Email;
+    this.Genero=this.User.Genero;
   }
-  ChangeName(valor: string): void {
-    this.TituloCard.emit(valor);
-  }
+
 }
