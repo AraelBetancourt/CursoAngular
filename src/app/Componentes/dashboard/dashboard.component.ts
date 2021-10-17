@@ -14,27 +14,7 @@ export class DashboardComponent implements OnInit {
        {Nombre:"JOse",Email:"1",Genero:"M"},
        {Nombre:"arael",Email:"2",Genero:"F"},
        {Nombre:"Betancort",Email:"3",Genero:"F"},
-       {Nombre:"flores",Email:"4",Genero:"M"},
-       {Nombre:"JOse",Email:"1",Genero:"M"},
-       {Nombre:"arael",Email:"2",Genero:"F"},
-       {Nombre:"Betancort",Email:"3",Genero:"F"},
-       {Nombre:"flores",Email:"4",Genero:"M"},
-       {Nombre:"JOse",Email:"1",Genero:"M"},
-       {Nombre:"arael",Email:"2",Genero:"F"},
-       {Nombre:"Betancort",Email:"3",Genero:"F"},
-       {Nombre:"flores",Email:"4",Genero:"M"},
-       {Nombre:"JOse",Email:"1",Genero:"M"},
-       {Nombre:"arael",Email:"2",Genero:"F"},
-       {Nombre:"Betancort",Email:"3",Genero:"F"},
-       {Nombre:"flores",Email:"4",Genero:"M"},
-       {Nombre:"JOse",Email:"1",Genero:"M"},
-       {Nombre:"arael",Email:"2",Genero:"F"},
-       {Nombre:"Betancort",Email:"3",Genero:"F"},
-       {Nombre:"flores",Email:"4",Genero:"M"},
-       {Nombre:"JOse",Email:"1",Genero:"M"},
-       {Nombre:"arael",Email:"2",Genero:"F"},
-       {Nombre:"Betancort",Email:"3",Genero:"F"},
-       {Nombre:"flores",Email:"4",Genero:"M"},
+       {Nombre:"flores",Email:"4",Genero:"A"}
 
      ]
   }

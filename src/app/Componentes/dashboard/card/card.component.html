@@ -2,8 +2,11 @@
     <div class="card" style="width: 18rem;">
         <div class="card-body">
             <h5 class="card-title">{{Nombre}}</h5>
-            <p class="card-text">{{Email}} <br>
-                {{Genero}}</p>
+            <p class="card-text" [ngSwitch]="Genero">{{Email}} <br>
+                <span *ngSwitchCase="'M'" class="badge bg-dark">{{Genero}}</span>
+                <span *ngSwitchCase="'F'" class="badge bg-primary">{{Genero}}</span>
+                <span *ngSwitchDefault class="badge bg-warning">Indefinido</span>
+            </p>
         </div>
     </div>
 </div>
